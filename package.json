@@ -1,0 +1,18 @@
+{
+  "name": "showbox-docs",
+  "version": "1.0.0",
+  "description": "showbox 文档",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.souche-inc.com:loan/magic-park/docs.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
