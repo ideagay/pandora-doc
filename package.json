@@ -8,7 +8,9 @@
   },
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "build:dev": "vuepress build docs",
+    "build:prepub": "vuepress build docs",
+    "build:prod": "vuepress build docs"
   },
   "repository": {
     "type": "git",
