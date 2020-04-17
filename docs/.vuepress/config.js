@@ -1,6 +1,8 @@
 module.exports = {
     title: 'Pandora',
     description: 'Just playing around',
+    dest: 'dist',
+    base: '/project/loan/magic-park/docs/',
     themeConfig: {
         sidebarDepth: 1,
         displayAllHeaders: true,
@@ -21,5 +23,8 @@ module.exports = {
                 ]
             }
         ]
+    },
+    configureWebpack: config => {
+        config.output.publicPath = './';
     }
 }
