@@ -2,7 +2,7 @@ module.exports = {
     title: 'Pandora',
     description: 'Just playing around',
     dest: 'dist',
-    base: '/project/loan/magic-park/docs/',
+    base: '/pandora-doc/',
     themeConfig: {
         sidebarDepth: 1,
         displayAllHeaders: true,
