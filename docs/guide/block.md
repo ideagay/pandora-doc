@@ -1,23 +1,18 @@
 # 开发区块
 
-## 官方物料仓库
-
-[Vue物料](https://git.souche-inc.com/loan/magic-park/vue-materials)
-[MUJI物料](https://git.souche-inc.com/loan/magic-park/muji-materials)
-
-通过从官方仓库拉分支开发，开发完成后提mr或者pr给管理员，codeReview后合到主分支，就完成了上架官方物料市场。
-
-## Vue物料开发演示
+### Vue区块物料开发演示
 
 ### Step 1
 
 clone官方仓库，切换开发分支
 
 ```
-git clone git@git.souche-inc.com:loan/magic-park/vue-materials.git
+#私有物料仓库
+git clone git@github.com/xxx.git
 
-cd vue-materials
+cd xxx
 
+# 切换开发分支
 git checkout -b block/OrderList
 ```
 
@@ -29,13 +24,13 @@ git checkout -b block/OrderList
 :::
 
 ```
-pd add
+pandora add
 ```
 
 生成的物料文件
 ::: tip
 下载区块时，只会包含区块的src文件夹，所以区块的所有源码都应位于src目录下，这意味着你的所有外部依赖都应位于该目录下，
-比如一张图片，工具函数等，使用第三方npm包的方式不变，参考[OrderList](https://www.baidu.com)
+比如一张图片，工具函数等，使用第三方npm包的方式不变
 :::
 
 ```
@@ -63,7 +58,7 @@ npm run serve
 
 ### Step 4
 
-开发完成后，新开一个终端，在当前区块开发路径下（./blocks/OrderList）执行pd sh，按照提示进行截图，截图用于区块预览，
+开发完成后，新开一个终端，在当前区块开发路径下（./blocks/OrderList）执行pandora sh，按照提示进行截图，截图用于区块预览，
 也可自行截图，并把图片的网络地址添加到物料数据文件materials.json中的screenshot字段
 
 ::: tip
@@ -72,10 +67,10 @@ npm run serve
 
 ```
 # -p 指定开发环境端口，可选，默认8222。
-pd sh -p 8222
+pandora sh -p 8333
 
 # 查看帮助
-pd sh -h 
+pandora sh -h
 ```
 
 ### Step 5
@@ -86,7 +81,7 @@ pd sh -h
 {
 	"name": "vue-materials",
 	"alias": "Vue物料",
-	"gitPath": "git@git.souche-inc.com:loan/magic-park/vue-materials.git",
+	"gitPath": "git@git.github.com:xxx.git",
 	"list": {
 		"blocks": [
 			{
@@ -95,8 +90,8 @@ pd sh -h
 				"tags": "mobile, element ui",
 				"name": "OrderList",
 				"description": "订单列表",
-				"sourceCode": "https://git.souche-inc.com/loan/magic-park/vue-materials/tree/master/blocks/OrderList",
-				"screenshot": "https://img.souche.com/f2e/showbox/r9wegmowe8cufv0dqluiyx2npq3sixx4.png"
+				"sourceCode": "xxx",
+				"screenshot": "xxx"
 			}
 		],
 		"components": []
